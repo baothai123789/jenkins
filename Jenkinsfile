@@ -5,12 +5,12 @@ pipeline{
     stages{
         stage("test"){
             steps{
-                sh node -v
+                sh 'node -v'
             }
         }
         stage("build") {
             steps{
-                sh node index.js
+                sh 'node index.js'
             }
         }
     }
